@@ -12,6 +12,18 @@
       "email": "nico@gmail.com",
       "lastName": "Barr",
       "password": "$2b$10$c.zC01WqKxVZ30e2.d9fO.nDqtoIGX8n5ZMJclV0IZ6ekk4T9ktcS"
+    },
+    {
+      "id": "7b455e50-d2c7-11ea-bcf8-ebb69c67544c",
+      "email": "ralph@gmail.com",
+      "lastName": "James",
+      "password": "$2b$10$pc5d0SovgoXKOgidC0NeLOlDihQITX9bAPbisJUtJ2CktK6MIAVaC"
+    },
+    {
+      "id": "a19dce20-d2c7-11ea-bcf8-ebb69c67544c",
+      "email": "eliot@gmail.com",
+      "lastName": "Franz",
+      "password": "$2b$10$lMn.3Oy7xRWqfz65/GMzret/vIjtgF8DAYwZHuedk8riqCKFAAKP6"
     }
   ],
   "favorites": []

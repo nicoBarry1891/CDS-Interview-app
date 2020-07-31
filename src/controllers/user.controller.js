@@ -13,19 +13,26 @@ const userRegister = async(req, res) => {
         req.body.password
     );
 
-    newUser.password = await newUser.encryptPass(newUser.password);
-    const savedUser = await getConnection().get('users').push(newUser).write();
-    const token = jwt.sign({ _id: savedUser._id }, process.env.SECURITY_TOKEN_KEY);
-    res.header('authorization', token).send('Success register');
+    const searchUser = await getConnection().get('users').find({ email: req.body.email }).value();
+    if (!searchUser) {
+        newUser.password = await newUser.encryptPass(newUser.password);
+        const savedUser = await getConnection().get('users').push(newUser).write();
+        res.send('Successful Sign up');
+
+    } else {
+        res.status(500).json('Email alredy exists');
+    }
 }
 
 const userLogin = async(req, res) => {
 
     const searchUser = await getConnection().get('users').find({ email: req.body.email }).value();
-    if (!searchUser) return res.status(500).json('Email or password invalid');
+    if (!searchUser) return res.status(500).json('Invalid email or password');
     const validatePassword = await User.validateUserPassword(req.body.password, searchUser.password);
     if (!validatePassword) return res.status(500).json('Incorrect password');
-    res.send(searchUser);
+
+    const token = jwt.sign({ _id: searchUser._id }, process.env.SECURITY_TOKEN_KEY);
+    res.header('authorization', token).send('Log in!');
 
 }
 
