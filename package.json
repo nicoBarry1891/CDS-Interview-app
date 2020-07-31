@@ -4,10 +4,10 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "test": "nodemon src/index.js --ignore test-db.json"
+        "start": "nodemon src/index.js --ignore test-db.json"
     },
     "keywords": [],
-    "author": "",
+    "author": "Nicolas Barragan",
     "license": "ISC",
     "dependencies": {
         "bcrypt": "^5.0.0",
@@ -16,6 +16,8 @@
         "jsonwebtoken": "^8.5.1",
         "lowdb": "^1.0.0",
         "morgan": "^1.10.0",
+        "node-fetch": "^2.6.0",
+        "underscore": "^1.10.2",
         "uuid": "^8.3.0"
     },
     "devDependencies": {

@@ -3,15 +3,16 @@ const morgan = require('morgan');
 const app = express();
 
 
-//settings
+//Init server
+app.set('port', process.env.PORT);
 
-app.set('port', process.env.PORT || 3000);
 
-//middlewares
+
+//Middlewares
 app.use(morgan('dev'));
 app.use(express.json());
 
-//routes
+//Routes
 app.use('/api', require('./routes/users.route'));
 
 

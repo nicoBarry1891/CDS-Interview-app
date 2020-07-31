@@ -5,4 +5,6 @@ const { connectDB } = require('./db');
 
 
 connectDB();
-app.listen(app.get('port'));
+app.listen(app.get('port'), () => {
+    console.log(`Starting server on port ${app.get('port')}`);
+});
