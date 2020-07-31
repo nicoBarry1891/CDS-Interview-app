@@ -1,30 +1,84 @@
 {
   "users": [
     {
-      "id": "2507fdb0-d2ac-11ea-b323-c7bf8f95c681",
-      "email": "pepe@gmail.com",
-      "firstName": "Pepe",
-      "lastName": "Zalayeta",
-      "password": "$2b$10$2dHyfJXWHX8ozsdUNpHCyO6wmm/s6z/pvHTN/IuHJhr5hi5xwK.1q"
-    },
-    {
-      "id": "a4db2a60-d2bd-11ea-b34a-0d5aa4c7619b",
-      "email": "nico@gmail.com",
-      "lastName": "Barr",
-      "password": "$2b$10$c.zC01WqKxVZ30e2.d9fO.nDqtoIGX8n5ZMJclV0IZ6ekk4T9ktcS"
-    },
-    {
-      "id": "7b455e50-d2c7-11ea-bcf8-ebb69c67544c",
-      "email": "ralph@gmail.com",
-      "lastName": "James",
-      "password": "$2b$10$pc5d0SovgoXKOgidC0NeLOlDihQITX9bAPbisJUtJ2CktK6MIAVaC"
-    },
-    {
-      "id": "a19dce20-d2c7-11ea-bcf8-ebb69c67544c",
-      "email": "eliot@gmail.com",
-      "lastName": "Franz",
-      "password": "$2b$10$lMn.3Oy7xRWqfz65/GMzret/vIjtgF8DAYwZHuedk8riqCKFAAKP6"
+      "id": "9a2b80e0-d378-11ea-a5c9-9b4e7fc70ddf",
+      "email": "bill@gmail.com",
+      "firstName": "Bill",
+      "lastName": "Gates",
+      "password": "$2b$10$VapinohFbXbW.KAAziA2COFXVm0nXsi/kWNWXj6wSakih.u5KSEKe"
     }
   ],
-  "favorites": []
+  "favorites": [
+    {
+      "user_id": "9a2b80e0-d378-11ea-a5c9-9b4e7fc70ddf",
+      "movies": [
+        {
+          "popularity": 86.86,
+          "vote_count": 26616,
+          "video": false,
+          "poster_path": "/9gk7adHYeDvHkCSEqAvQNLV5Uge.jpg",
+          "id": 27205,
+          "adult": false,
+          "backdrop_path": "/s3TBrRGB1iav7gFOCNx3H31MoES.jpg",
+          "original_language": "en",
+          "original_title": "Inception",
+          "genre_ids": [
+            28,
+            12,
+            878
+          ],
+          "title": "Inception",
+          "vote_average": 8.3,
+          "overview": "Cobb, a skilled thief who commits corporate espionage by infiltrating the subconscious of his targets is offered a chance to regain his old life as payment for a task considered to be impossible: \"inception\", the implantation of another person's idea into a target's subconscious.",
+          "release_date": "2010-07-15",
+          "suggestionScore": 11,
+          "addedAt": "2020-07-31T22:00:07.704Z"
+        },
+        {
+          "popularity": 87.636,
+          "vote_count": 5334,
+          "video": false,
+          "poster_path": "/db32LaOibwEliAmSL2jjDF6oDdj.jpg",
+          "id": 181812,
+          "adult": false,
+          "backdrop_path": "/SPkEiZGxq5aHWQ2Zw7AITwSEo2.jpg",
+          "original_language": "en",
+          "original_title": "Star Wars: The Rise of Skywalker",
+          "genre_ids": [
+            28,
+            12,
+            878
+          ],
+          "title": "Star Wars: The Rise of Skywalker",
+          "vote_average": 6.6,
+          "overview": "The surviving Resistance faces the First Order once again as the journey of Rey, Finn and Poe Dameron continues. With the power and knowledge of generations behind them, the final battle begins.",
+          "release_date": "2019-12-18",
+          "suggestionScore": 9,
+          "addedAt": "2020-07-31T22:01:03.713Z"
+        },
+        {
+          "popularity": 87.636,
+          "vote_count": 5334,
+          "video": false,
+          "poster_path": "/db32LaOibwEliAmSL2jjDF6oDdj.jpg",
+          "id": 181812,
+          "adult": false,
+          "backdrop_path": "/SPkEiZGxq5aHWQ2Zw7AITwSEo2.jpg",
+          "original_language": "en",
+          "original_title": "Star Wars: The Rise of Skywalker",
+          "genre_ids": [
+            28,
+            12,
+            878
+          ],
+          "title": "Star Wars: The Rise of Skywalker",
+          "vote_average": 6.6,
+          "overview": "The surviving Resistance faces the First Order once again as the journey of Rey, Finn and Poe Dameron continues. With the power and knowledge of generations behind them, the final battle begins.",
+          "release_date": "2019-12-18",
+          "suggestionScore": 9,
+          "addedAt": "2020-07-31T22:02:55.302Z"
+        }
+      ]
+    }
+  ]
 }
