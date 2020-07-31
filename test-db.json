@@ -1,0 +1,18 @@
+{
+  "users": [
+    {
+      "id": "2507fdb0-d2ac-11ea-b323-c7bf8f95c681",
+      "email": "pepe@gmail.com",
+      "firstName": "Pepe",
+      "lastName": "Zalayeta",
+      "password": "$2b$10$2dHyfJXWHX8ozsdUNpHCyO6wmm/s6z/pvHTN/IuHJhr5hi5xwK.1q"
+    },
+    {
+      "id": "a4db2a60-d2bd-11ea-b34a-0d5aa4c7619b",
+      "email": "nico@gmail.com",
+      "lastName": "Barr",
+      "password": "$2b$10$c.zC01WqKxVZ30e2.d9fO.nDqtoIGX8n5ZMJclV0IZ6ekk4T9ktcS"
+    }
+  ],
+  "favorites": []
+}
