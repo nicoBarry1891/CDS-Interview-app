@@ -23,9 +23,14 @@ const movies = async(req, res) => {
 
 
 const addFavMovie = async(req, res) => {
-    req.body.addedAt = new Date();
-    const addMovies = await getConnection().get('favorites').find({ user_id: req.userLogged }).get('movies').push(req.body).write();
-    res.send('Recieved add');
+
+    try {
+        req.body.addedAt = new Date();
+        const addMovies = await getConnection().get('favorites').find({ user_id: req.userLogged }).get('movies').push(req.body).write();
+        res.status(200).json({ msg: 'Successul operation' });
+    } catch (err) {
+        res.status(400).json({ msg: err });
+    }
 
 }
 

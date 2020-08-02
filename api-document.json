@@ -1,0 +1,290 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "Api con Node Js - Proceso de reclutamiento Codigo Del Sur",
+        "version": "1.0.0",
+        "title": "Api Node js"
+    },
+    "host": "localhost:3000",
+    "basePath": "/api",
+    "tags": [{
+            "name": "user",
+            "description": "Operations about user"
+        },
+        {
+            "name": "movies",
+            "description": "Operations about user / movies"
+        }
+    ],
+    "schemes": [
+        "http"
+    ],
+    "paths": {
+        "/register": {
+            "post": {
+                "tags": [
+                    "user"
+                ],
+                "summary": "Create user",
+                "description": "Create user into app",
+                "operationId": "createUser",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [{
+                    "in": "body",
+                    "name": "body",
+                    "description": "Created user object",
+                    "required": true,
+                    "schema": {
+                        "$ref": "#/definitions/User"
+                    }
+                }],
+                "responses": {
+                    "200": {
+                        "description": "Successful Sign up"
+                    },
+                    "400": {
+                        "description": "Email alredy exists / Invalid inputs"
+                    }
+                }
+            }
+        },
+        "/login": {
+            "post": {
+                "tags": [
+                    "user"
+                ],
+                "summary": "Login user",
+                "description": "Login user",
+                "operationId": "loginUser",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [{
+                    "in": "body",
+                    "name": "body",
+                    "description": "Created user object",
+                    "required": true,
+                    "schema": {
+                        "$ref": "#/definitions/UserLogin"
+                    }
+                }],
+                "responses": {
+                    "200": {
+                        "description": "Successful Sign in",
+                        "headers": {
+                            "authorization": {
+                                "type": "string",
+                                "description": "Create token auth"
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Invalid email or password"
+                    }
+                }
+            }
+        },
+        "/movies/list-movies/{optionalSearch}": {
+            "get": {
+                "tags": [
+                    "movies"
+                ],
+                "summary": "Request movies from TMBD",
+                "description": "Request movies, using a keyword you can filter",
+                "operationId": "moviesTMBD",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [{
+                    "name": "optionalSearch",
+                    "in": "path",
+                    "description": "Searching movies",
+                    "required": true,
+                    "type": "string"
+                }],
+                "responses": {
+                    "200": {
+                        "description": "Successful Operation"
+                    },
+                    "401": {
+                        "description": "Access Denied"
+                    }
+                }
+            }
+        },
+        "/movies/add-favorite": {
+            "post": {
+                "tags": [
+                    "movies"
+                ],
+                "summary": "Add favorite movies",
+                "description": "Add favorite movies. Send a movie that was obtained in this request: /movies/list-movies/",
+                "operationId": "addFavoriteMovie",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [{
+                    "in": "body",
+                    "name": "body",
+                    "description": "Created user object",
+                    "required": true,
+                    "schema": {
+                        "$ref": "#/definitions/AddMovie"
+                    }
+                }],
+                "responses": {
+                    "200": {
+                        "description": "Successful Operation"
+                    },
+                    "401": {
+                        "description": "Access Denied"
+                    }
+                }
+            }
+        },
+        "/movies/list-favorites": {
+            "get": {
+                "tags": [
+                    "movies"
+                ],
+                "summary": "List favorite movies",
+                "description": "List user favorite movies",
+                "operationId": "listFavoriteMovies",
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful Operation"
+                    },
+                    "401": {
+                        "description": "Access Denied"
+                    }
+                }
+            }
+        }
+    },
+    "securityDefinitions": {
+        "petstore_auth": {
+            "type": "oauth2",
+            "authorizationUrl": "http://petstore.swagger.io/oauth/dialog",
+            "flow": "implicit",
+            "scopes": {
+                "write:pets": "modify pets in your account",
+                "read:pets": "read your pets"
+            }
+        },
+        "api_key": {
+            "type": "apiKey",
+            "name": "api_key",
+            "in": "header"
+        }
+    },
+    "definitions": {
+        "User": {
+            "type": "object",
+            "properties": {
+                "email": {
+                    "type": "string"
+                },
+                "firstName": {
+                    "type": "string"
+                },
+                "lastName": {
+                    "type": "string"
+                },
+                "password": {
+                    "type": "string"
+                }
+            }
+        },
+        "UserLogin": {
+            "type": "object",
+            "properties": {
+                "email": {
+                    "type": "string"
+                },
+                "password": {
+                    "type": "string"
+                }
+            }
+        },
+        "AddMovie": {
+            "type": "object",
+            "properties": {
+                "popularity": {
+                    "type": "string"
+                },
+                "vote_count": {
+                    "type": "integer"
+                },
+                "video": {
+                    "type": "boolean"
+                },
+                "poster_path": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "integer"
+                },
+                "adult": {
+                    "type": "boolean"
+                },
+                "backdrop_path": {
+                    "type": "string"
+                },
+                "original_language": {
+                    "type": "string"
+                },
+                "original_title": {
+                    "type": "string"
+                },
+                "genre_ids": {
+                    "type": "string"
+                },
+                "title": {
+                    "type": "string"
+                },
+                "vote_average": {
+                    "type": "integer"
+                },
+                "overview": {
+                    "type": "string"
+                },
+                "release_date": {
+                    "type": "integer"
+                },
+                "suggestionScore": {
+                    "type": "integer"
+                },
+                "addedAt": {
+                    "type": "integer"
+                },
+                "suggestionForTodayScore": {
+                    "type": "integer"
+                }
+            }
+        },
+        "ApiResponse": {
+            "type": "object",
+            "properties": {
+                "code": {
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "type": {
+                    "type": "string"
+                },
+                "message": {
+                    "type": "string"
+                }
+            }
+        }
+    },
+    "externalDocs": {
+        "description": "Find out more about Swagger",
+        "url": "http://swagger.io"
+    }
+}
