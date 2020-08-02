@@ -1,7 +1,7 @@
 const { Router } = require('express');
 const movies_route = Router();
 const { movies, addFavMovie, listFavMovies } = require('../controllers/movies.controller');
-const ValidateToken = require('../libs/ValidateToken');
+const { ValidateToken } = require('../libs/AuthToken');
 
 
 movies_route.get('/list-movies/:search*?', ValidateToken, movies);

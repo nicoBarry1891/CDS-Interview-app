@@ -6,6 +6,19 @@
       "firstName": "Bill",
       "lastName": "Gates",
       "password": "$2b$10$VapinohFbXbW.KAAziA2COFXVm0nXsi/kWNWXj6wSakih.u5KSEKe"
+    },
+    {
+      "id": "188e2660-d476-11ea-b0d7-b717449dc33f",
+      "email": "nico@gmail.com",
+      "lastName": "Barr",
+      "password": "$2b$10$vBz8XNx.xIGy9MXn8h/p5uHkghYSwrAdNeW8kz4nlt2RpSJQDWUOG"
+    },
+    {
+      "id": "dc1aeb60-d4f1-11ea-9593-5b88785a7018",
+      "email": "steve@gmail.com",
+      "firstName": "Steve",
+      "lastName": "Jobs",
+      "password": "$2b$10$x/yWxm4ZMEjNoy1P/5gdGO7XyUq/PrUWHP2k22ehEwLSoR7hMeD7S"
     }
   ],
   "favorites": [
@@ -32,7 +45,8 @@
           "overview": "Cobb, a skilled thief who commits corporate espionage by infiltrating the subconscious of his targets is offered a chance to regain his old life as payment for a task considered to be impossible: \"inception\", the implantation of another person's idea into a target's subconscious.",
           "release_date": "2010-07-15",
           "suggestionScore": 11,
-          "addedAt": "2020-07-31T22:00:07.704Z"
+          "addedAt": "2020-07-31T22:00:07.704Z",
+          "suggestionForTodayScore": 1
         },
         {
           "popularity": 87.636,
@@ -54,7 +68,8 @@
           "overview": "The surviving Resistance faces the First Order once again as the journey of Rey, Finn and Poe Dameron continues. With the power and knowledge of generations behind them, the final battle begins.",
           "release_date": "2019-12-18",
           "suggestionScore": 9,
-          "addedAt": "2020-07-31T22:01:03.713Z"
+          "addedAt": "2020-07-31T22:01:03.713Z",
+          "suggestionForTodayScore": 76
         },
         {
           "popularity": 87.636,
@@ -76,7 +91,35 @@
           "overview": "The surviving Resistance faces the First Order once again as the journey of Rey, Finn and Poe Dameron continues. With the power and knowledge of generations behind them, the final battle begins.",
           "release_date": "2019-12-18",
           "suggestionScore": 9,
-          "addedAt": "2020-07-31T22:02:55.302Z"
+          "addedAt": "2020-07-31T22:02:55.302Z",
+          "suggestionForTodayScore": 78
+        }
+      ]
+    },
+    {
+      "user_id": "188e2660-d476-11ea-b0d7-b717449dc33f",
+      "movies": [
+        {
+          "popularity": 83.365,
+          "vote_count": 8601,
+          "video": false,
+          "poster_path": "/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
+          "id": 496243,
+          "adult": false,
+          "backdrop_path": "/ApiBzeaa95TNYliSbQ8pJv4Fje7.jpg",
+          "original_language": "ko",
+          "original_title": "기생충",
+          "genre_ids": [
+            35,
+            18,
+            53
+          ],
+          "title": "Parasite",
+          "vote_average": 8.5,
+          "overview": "All unemployed, Ki-taek's family takes peculiar interest in the wealthy and glamorous Parks for their livelihood until they get entangled in an unexpected incident.",
+          "release_date": "2019-05-30",
+          "suggestionScore": 3,
+          "addedAt": "2020-08-02T04:13:04.316Z"
         }
       ]
     }
