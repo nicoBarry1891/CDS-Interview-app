@@ -4,7 +4,7 @@ const app = express();
 
 
 //Init server
-app.set('port', process.env.PORT);
+app.set('port', process.env.PORT || 3000);
 
 
 
@@ -14,6 +14,7 @@ app.use(express.json());
 
 //Routes
 app.use('/api', require('./routes/users.route'));
+app.use('/api/movies', require('./routes/movies.route'));
 
 
 module.exports = app;
