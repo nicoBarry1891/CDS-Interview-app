@@ -19,6 +19,21 @@
       "firstName": "Steve",
       "lastName": "Jobs",
       "password": "$2b$10$x/yWxm4ZMEjNoy1P/5gdGO7XyUq/PrUWHP2k22ehEwLSoR7hMeD7S"
+    },
+    {
+      "id": "9bd12300-d517-11ea-889e-93b8162aff3c",
+      "email": "slash@gmail.com",
+      "firstName": "Slash",
+      "lastName": "Guns and Roses",
+      "password": "$2b$10$rpbKsq2TU6rMLqcR3gePPurXf2C.wqvl3bD.ML4S0E8k6qZQsQBbK"
+    },
+    {
+      "id": "80757d20-d51e-11ea-9dd7-7569e8c9a915",
+      "email": "rayn@gmail.com",
+      "firstName": "Rayn",
+      "lastName": "Giggs",
+      "password": "$2b$10$j5wHIMzgNxpYEehf3BTREuVr5DJsyjdzDTWvs64HSSH9.2djXdTmi",
+      "auth_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI4MDc1N2QyMC1kNTFlLTExZWEtOWRkNy03NTY5ZThjOWE5MTUiLCJpYXQiOjE1OTY0MTUzODgsImV4cCI6MTU5NjQ1MTM4OH0.DXGvXuxVkj-CU5WjG-a0zaHAS8mvimlfmOe4N1IDo10"
     }
   ],
   "favorites": [
@@ -122,6 +137,19 @@
           "addedAt": "2020-08-02T04:13:04.316Z"
         }
       ]
+    },
+    {
+      "user_id": "9bd12300-d517-11ea-889e-93b8162aff3c",
+      "movies": []
+    },
+    {
+      "user_id": "80757d20-d51e-11ea-9dd7-7569e8c9a915",
+      "movies": []
+    }
+  ],
+  "blacklist_tokens": [
+    {
+      "id_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI4MDc1N2QyMC1kNTFlLTExZWEtOWRkNy03NTY5ZThjOWE5MTUiLCJpYXQiOjE1OTY0MTUzODgsImV4cCI6MTU5NjQ1MTM4OH0.DXGvXuxVkj-CU5WjG-a0zaHAS8mvimlfmOe4N1IDo10"
     }
   ]
 }

@@ -16,7 +16,9 @@ const userRegister = async(req, res) => {
         password: Joi.string().min(8).max(16).required()
     });
     const validation = schema.validate(req.body, { abortEarly: false });
-    if (validation) {
+
+    if (validation.error) {
+
         res.status(400).send(validation);
     } else {
 
@@ -38,8 +40,6 @@ const userRegister = async(req, res) => {
             res.status(400).json({ error: 'Email alredy exists' });
         }
     }
-
-
 }
 
 const userLogin = async(req, res) => {
@@ -49,12 +49,11 @@ const userLogin = async(req, res) => {
     if (!validatePassword) return res.status(400).json({ error: 'Invalid password' });
     const token = CreateToken(searchUser.id);
     res.header('authorization', token).json({ msg: 'Log in!' });
-
-
 }
 
-const userLogOut = (req, res) => {
-    req.token;
+const userLogOut = async(req, res) => {
+    await getConnection().get('blacklist_tokens').push({ id_token: req.token }).write();
+    res.send(200).json({ msg: 'Log out!' });
 }
 
 
