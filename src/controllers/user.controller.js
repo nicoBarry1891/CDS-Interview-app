@@ -53,8 +53,10 @@ const userLogin = async(req, res) => {
 
 const userLogOut = async(req, res) => {
     await getConnection().get('blacklist_tokens').push({ id_token: req.token }).write();
-    res.send(200).json({ msg: 'Log out!' });
+    res.json({ msg: 'Log out!' });
+
 }
+
 
 
 module.exports = {

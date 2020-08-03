@@ -144,12 +144,57 @@
     },
     {
       "user_id": "80757d20-d51e-11ea-9dd7-7569e8c9a915",
-      "movies": []
+      "movies": [
+        {
+          "popularity": 4.522,
+          "vote_count": 24,
+          "video": true,
+          "poster_path": "/ilmsQLtthtcD8EU1k25cp0xFQ9a.jpg",
+          "id": 50410,
+          "adult": false,
+          "backdrop_path": null,
+          "original_language": "en",
+          "original_title": "Spider-Man: The Venom Saga",
+          "genre_ids": [
+            16
+          ],
+          "title": "Spider-Man: The Venom Saga",
+          "vote_average": 7.3,
+          "overview": "A space-shuttle crash-landing puts the famous web-slinger Spider-Man in contact with a living alien substance that bonds to his suit and enhances his super-powers. Unfortunately, the alien substance begins to change him and he feels the pull of evil, so discards the suit. The evil attaches itself to another host leading to an epic confrontation between good and evil.",
+          "release_date": "1994-06-07",
+          "suggestionScore": 1,
+          "addedAt": "2020-08-03T02:01:56.787Z",
+          "suggestionForTodayScore": 50
+        },
+        {
+          "popularity": 96.636,
+          "vote_count": 59,
+          "video": false,
+          "poster_path": "/3ynPnBXQVT2Y0s19fDIPlWKUlxH.jpg",
+          "id": 587496,
+          "adult": false,
+          "backdrop_path": "/2gBMBfmQvHeOQQ5PiKiuxVdGs77.jpg",
+          "original_language": "en",
+          "original_title": "The Rental",
+          "genre_ids": [
+            18,
+            27,
+            53
+          ],
+          "title": "The Rental",
+          "vote_average": 5.5,
+          "overview": "Two couples on an oceanside getaway grow suspicious that the host of their seemingly perfect rental house may be spying on them. Before long, what should have been a celebratory weekend trip turns into something far more sinister.",
+          "release_date": "2020-07-23",
+          "suggestionScore": 1,
+          "addedAt": "2020-08-03T02:15:02.429Z",
+          "suggestionForTodayScore": 31
+        }
+      ]
     }
   ],
   "blacklist_tokens": [
     {
-      "id_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI4MDc1N2QyMC1kNTFlLTExZWEtOWRkNy03NTY5ZThjOWE5MTUiLCJpYXQiOjE1OTY0MTUzODgsImV4cCI6MTU5NjQ1MTM4OH0.DXGvXuxVkj-CU5WjG-a0zaHAS8mvimlfmOe4N1IDo10"
+      "id_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI4MDc1N2QyMC1kNTFlLTExZWEtOWRkNy03NTY5ZThjOWE5MTUiLCJpYXQiOjE1OTY0MTg3NDMsImV4cCI6MTU5NjQ1NDc0M30.RpAJlh4m_Ou1dy3c96hQyJypFk5Xpp70wqCkWOtwfPs"
     }
   ]
 }

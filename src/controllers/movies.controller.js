@@ -2,6 +2,7 @@ const { getConnection } = require('../db');
 const fetch = require('node-fetch');
 const _ = require('underscore');
 const auxFunctions = require('../libs/AuxFunctions');
+const Joi = require('joi');
 
 
 
@@ -23,7 +24,6 @@ const movies = async(req, res) => {
 
 
 const addFavMovie = async(req, res) => {
-
     try {
         req.body.addedAt = new Date();
         const addMovies = await getConnection().get('favorites').find({ user_id: req.userLogged }).get('movies').push(req.body).write();
