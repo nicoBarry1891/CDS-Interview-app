@@ -1,200 +1,47 @@
 {
   "users": [
     {
-      "id": "9a2b80e0-d378-11ea-a5c9-9b4e7fc70ddf",
-      "email": "bill@gmail.com",
-      "firstName": "Bill",
-      "lastName": "Gates",
-      "password": "$2b$10$VapinohFbXbW.KAAziA2COFXVm0nXsi/kWNWXj6wSakih.u5KSEKe"
-    },
-    {
-      "id": "188e2660-d476-11ea-b0d7-b717449dc33f",
-      "email": "nico@gmail.com",
-      "lastName": "Barr",
-      "password": "$2b$10$vBz8XNx.xIGy9MXn8h/p5uHkghYSwrAdNeW8kz4nlt2RpSJQDWUOG"
-    },
-    {
-      "id": "dc1aeb60-d4f1-11ea-9593-5b88785a7018",
-      "email": "steve@gmail.com",
-      "firstName": "Steve",
-      "lastName": "Jobs",
-      "password": "$2b$10$x/yWxm4ZMEjNoy1P/5gdGO7XyUq/PrUWHP2k22ehEwLSoR7hMeD7S"
-    },
-    {
-      "id": "9bd12300-d517-11ea-889e-93b8162aff3c",
-      "email": "slash@gmail.com",
-      "firstName": "Slash",
-      "lastName": "Guns and Roses",
-      "password": "$2b$10$rpbKsq2TU6rMLqcR3gePPurXf2C.wqvl3bD.ML4S0E8k6qZQsQBbK"
-    },
-    {
-      "id": "80757d20-d51e-11ea-9dd7-7569e8c9a915",
-      "email": "rayn@gmail.com",
-      "firstName": "Rayn",
-      "lastName": "Giggs",
-      "password": "$2b$10$j5wHIMzgNxpYEehf3BTREuVr5DJsyjdzDTWvs64HSSH9.2djXdTmi",
-      "auth_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI4MDc1N2QyMC1kNTFlLTExZWEtOWRkNy03NTY5ZThjOWE5MTUiLCJpYXQiOjE1OTY0MTUzODgsImV4cCI6MTU5NjQ1MTM4OH0.DXGvXuxVkj-CU5WjG-a0zaHAS8mvimlfmOe4N1IDo10"
+      "id": "45e86bc0-d6a1-11ea-97b4-d36f07a6b2b4",
+      "email": "denver20@gmail.com",
+      "firstName": "Denver",
+      "lastName": "Colorado",
+      "password": "$2b$10$dqy6sRESCrei3W1mUAWV5.2x5aVvIOTznOSAiyO6fDbtpD3SHTrxq"
     }
   ],
   "favorites": [
     {
-      "user_id": "9a2b80e0-d378-11ea-a5c9-9b4e7fc70ddf",
+      "user_id": "45e86bc0-d6a1-11ea-97b4-d36f07a6b2b4",
       "movies": [
         {
-          "popularity": 86.86,
-          "vote_count": 26616,
+          "popularity": 82.945,
+          "vote_count": 5301,
           "video": false,
-          "poster_path": "/9gk7adHYeDvHkCSEqAvQNLV5Uge.jpg",
-          "id": 27205,
+          "poster_path": "/h4VB6m0RwcicVEZvzftYZyKXs6K.jpg",
+          "id": 495764,
           "adult": false,
-          "backdrop_path": "/s3TBrRGB1iav7gFOCNx3H31MoES.jpg",
+          "backdrop_path": "/9xNOiv6DZZjH7ABoUUDP0ZynouU.jpg",
           "original_language": "en",
-          "original_title": "Inception",
+          "original_title": "Birds of Prey (and the Fantabulous Emancipation of One Harley Quinn)",
           "genre_ids": [
             28,
-            12,
-            878
-          ],
-          "title": "Inception",
-          "vote_average": 8.3,
-          "overview": "Cobb, a skilled thief who commits corporate espionage by infiltrating the subconscious of his targets is offered a chance to regain his old life as payment for a task considered to be impossible: \"inception\", the implantation of another person's idea into a target's subconscious.",
-          "release_date": "2010-07-15",
-          "suggestionScore": 11,
-          "addedAt": "2020-07-31T22:00:07.704Z",
-          "suggestionForTodayScore": 1
-        },
-        {
-          "popularity": 87.636,
-          "vote_count": 5334,
-          "video": false,
-          "poster_path": "/db32LaOibwEliAmSL2jjDF6oDdj.jpg",
-          "id": 181812,
-          "adult": false,
-          "backdrop_path": "/SPkEiZGxq5aHWQ2Zw7AITwSEo2.jpg",
-          "original_language": "en",
-          "original_title": "Star Wars: The Rise of Skywalker",
-          "genre_ids": [
-            28,
-            12,
-            878
-          ],
-          "title": "Star Wars: The Rise of Skywalker",
-          "vote_average": 6.6,
-          "overview": "The surviving Resistance faces the First Order once again as the journey of Rey, Finn and Poe Dameron continues. With the power and knowledge of generations behind them, the final battle begins.",
-          "release_date": "2019-12-18",
-          "suggestionScore": 9,
-          "addedAt": "2020-07-31T22:01:03.713Z",
-          "suggestionForTodayScore": 76
-        },
-        {
-          "popularity": 87.636,
-          "vote_count": 5334,
-          "video": false,
-          "poster_path": "/db32LaOibwEliAmSL2jjDF6oDdj.jpg",
-          "id": 181812,
-          "adult": false,
-          "backdrop_path": "/SPkEiZGxq5aHWQ2Zw7AITwSEo2.jpg",
-          "original_language": "en",
-          "original_title": "Star Wars: The Rise of Skywalker",
-          "genre_ids": [
-            28,
-            12,
-            878
-          ],
-          "title": "Star Wars: The Rise of Skywalker",
-          "vote_average": 6.6,
-          "overview": "The surviving Resistance faces the First Order once again as the journey of Rey, Finn and Poe Dameron continues. With the power and knowledge of generations behind them, the final battle begins.",
-          "release_date": "2019-12-18",
-          "suggestionScore": 9,
-          "addedAt": "2020-07-31T22:02:55.302Z",
-          "suggestionForTodayScore": 78
-        }
-      ]
-    },
-    {
-      "user_id": "188e2660-d476-11ea-b0d7-b717449dc33f",
-      "movies": [
-        {
-          "popularity": 83.365,
-          "vote_count": 8601,
-          "video": false,
-          "poster_path": "/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
-          "id": 496243,
-          "adult": false,
-          "backdrop_path": "/ApiBzeaa95TNYliSbQ8pJv4Fje7.jpg",
-          "original_language": "ko",
-          "original_title": "기생충",
-          "genre_ids": [
             35,
-            18,
-            53
+            80,
+            18
           ],
-          "title": "Parasite",
-          "vote_average": 8.5,
-          "overview": "All unemployed, Ki-taek's family takes peculiar interest in the wealthy and glamorous Parks for their livelihood until they get entangled in an unexpected incident.",
-          "release_date": "2019-05-30",
-          "suggestionScore": 3,
-          "addedAt": "2020-08-02T04:13:04.316Z"
-        }
-      ]
-    },
-    {
-      "user_id": "9bd12300-d517-11ea-889e-93b8162aff3c",
-      "movies": []
-    },
-    {
-      "user_id": "80757d20-d51e-11ea-9dd7-7569e8c9a915",
-      "movies": [
-        {
-          "popularity": 4.522,
-          "vote_count": 24,
-          "video": true,
-          "poster_path": "/ilmsQLtthtcD8EU1k25cp0xFQ9a.jpg",
-          "id": 50410,
-          "adult": false,
-          "backdrop_path": null,
-          "original_language": "en",
-          "original_title": "Spider-Man: The Venom Saga",
-          "genre_ids": [
-            16
-          ],
-          "title": "Spider-Man: The Venom Saga",
-          "vote_average": 7.3,
-          "overview": "A space-shuttle crash-landing puts the famous web-slinger Spider-Man in contact with a living alien substance that bonds to his suit and enhances his super-powers. Unfortunately, the alien substance begins to change him and he feels the pull of evil, so discards the suit. The evil attaches itself to another host leading to an epic confrontation between good and evil.",
-          "release_date": "1994-06-07",
-          "suggestionScore": 1,
-          "addedAt": "2020-08-03T02:01:56.787Z",
-          "suggestionForTodayScore": 50
-        },
-        {
-          "popularity": 96.636,
-          "vote_count": 59,
-          "video": false,
-          "poster_path": "/3ynPnBXQVT2Y0s19fDIPlWKUlxH.jpg",
-          "id": 587496,
-          "adult": false,
-          "backdrop_path": "/2gBMBfmQvHeOQQ5PiKiuxVdGs77.jpg",
-          "original_language": "en",
-          "original_title": "The Rental",
-          "genre_ids": [
-            18,
-            27,
-            53
-          ],
-          "title": "The Rental",
-          "vote_average": 5.5,
-          "overview": "Two couples on an oceanside getaway grow suspicious that the host of their seemingly perfect rental house may be spying on them. Before long, what should have been a celebratory weekend trip turns into something far more sinister.",
-          "release_date": "2020-07-23",
-          "suggestionScore": 1,
-          "addedAt": "2020-08-03T02:15:02.429Z",
-          "suggestionForTodayScore": 31
+          "title": "Birds of Prey (and the Fantabulous Emancipation of One Harley Quinn)",
+          "vote_average": 7.2,
+          "overview": "Harley Quinn joins forces with a singer, an assassin and a police detective to help a young girl who had a hit placed on her after she stole a rare diamond from a crime lord.",
+          "release_date": "2020-02-05",
+          "suggestionScore": 6,
+          "addedAt": "2020-08-04T22:27:42.343Z",
+          "suggestionForTodayScore": 18
         }
       ]
     }
   ],
   "blacklist_tokens": [
     {
-      "id_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI4MDc1N2QyMC1kNTFlLTExZWEtOWRkNy03NTY5ZThjOWE5MTUiLCJpYXQiOjE1OTY0MTg3NDMsImV4cCI6MTU5NjQ1NDc0M30.RpAJlh4m_Ou1dy3c96hQyJypFk5Xpp70wqCkWOtwfPs"
+      "id_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI0NWU4NmJjMC1kNmExLTExZWEtOTdiNC1kMzZmMDdhNmIyYjQiLCJpYXQiOjE1OTY1Nzk5NTksImV4cCI6MTU5NjYxNTk1OX0.MOLQSIrm4XWjgyAiFvKmpaViNuA3Th4edaAz7jRNwyo"
     }
   ]
 }

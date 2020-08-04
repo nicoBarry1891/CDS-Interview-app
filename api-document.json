@@ -86,6 +86,31 @@
                 }
             }
         },
+        "/logout": {
+            "post": {
+                "tags": [
+                    "user"
+                ],
+                "summary": "Logout user",
+                "description": "Logout user",
+                "operationId": "logoutUser",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [{
+                    "name": "authorization",
+                    "in": "header",
+                    "description": "Token authentication",
+                    "required": true,
+                    "type": "string"
+                }],
+                "responses": {
+                    "200": {
+                        "description": "Successful Log out"
+                    }
+                }
+            }
+        },
         "/movies/list-movies/{optionalSearch}": {
             "get": {
                 "tags": [
@@ -98,12 +123,20 @@
                     "application/json"
                 ],
                 "parameters": [{
-                    "name": "optionalSearch",
-                    "in": "path",
-                    "description": "Searching movies",
-                    "required": true,
-                    "type": "string"
-                }],
+                        "name": "optionalSearch",
+                        "in": "path",
+                        "description": "Searching movies",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "authorization",
+                        "in": "header",
+                        "description": "Token authentication",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Successful Operation"
@@ -126,14 +159,22 @@
                     "application/json"
                 ],
                 "parameters": [{
-                    "in": "body",
-                    "name": "body",
-                    "description": "Created user object",
-                    "required": true,
-                    "schema": {
-                        "$ref": "#/definitions/AddMovie"
+                        "in": "body",
+                        "name": "body",
+                        "description": "Created user object",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/AddMovie"
+                        }
+                    },
+                    {
+                        "name": "authorization",
+                        "in": "header",
+                        "description": "Token authentication",
+                        "required": true,
+                        "type": "string"
                     }
-                }],
+                ],
                 "responses": {
                     "200": {
                         "description": "Successful Operation"
@@ -155,6 +196,13 @@
                 "produces": [
                     "application/json"
                 ],
+                "parameters": [{
+                    "name": "authorization",
+                    "in": "header",
+                    "description": "Token authentication",
+                    "required": true,
+                    "type": "string"
+                }],
                 "responses": {
                     "200": {
                         "description": "Successful Operation"

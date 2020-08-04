@@ -29,7 +29,7 @@ const userRegister = async(req, res) => {
             req.body.lastName,
             req.body.password
         );
-        const searchUser = await getConnection().get('users').find({ email: req.body.email }).value();
+        const searchUser = getConnection().get('users').find({ email: req.body.email }).value();
         if (!searchUser) {
             newUser.password = await newUser.encryptPass(newUser.password);
             await getConnection().get('users').push(newUser).write();
@@ -48,7 +48,7 @@ const userLogin = async(req, res) => {
     const validatePassword = await User.validateUserPassword(req.body.password, searchUser.password);
     if (!validatePassword) return res.status(400).json({ error: 'Invalid password' });
     const token = CreateToken(searchUser.id);
-    res.header('authorization', token).json({ msg: 'Log in!' });
+    res.status(200).send({ msg: 'Log in!', token: token });
 }
 
 const userLogOut = async(req, res) => {

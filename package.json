@@ -4,7 +4,8 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "dev": "nodemon src/index.js --ignore test-db.json"
+        "dev": "nodemon src/index.js --ignore test-db.json",
+        "test": "mocha"
     },
     "keywords": [],
     "author": "Nicolas Barragan",
@@ -23,6 +24,8 @@
         "uuid": "^8.3.0"
     },
     "devDependencies": {
-        "nodemon": "^2.0.4"
+        "mocha": "^8.1.1",
+        "nodemon": "^2.0.4",
+        "supertest": "^4.0.2"
     }
 }
